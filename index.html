@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Interactive card details form</title>
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div id="bg"></div>
+    <div id="card-front">
+      <div class="top">
+        <img src="./images/card-logo.svg" alt="">
+      </div>
+      <div class="middle">0000 0000 0000 0000</div>
+      <div class="bottom">
+        <span>Jane Appleseed</span>
+        <span>00/00</span>
+      </div>
+    </div>
+    <div id="card-back">
+      <span class="cvc">000</span>
+    </div>
+
+    <div id="details">
+
+      <div id="name-number">
+        <div id="card-name">
+          <label>Cardholder Name</label>
+          <input type="text" placeholder="e.g. Jane Appleseed" id="card-name-input">
+          <span class="wrong-name">Can't be blank</span>
+        </div>
+        <div id="card-num">
+          <label>Card Number</label>
+          <input type="email" placeholder="e.g. 1234 5678 9123 0000" id="card-num-input">
+          <span class="wrong-num1">Wrong format, numbers only </span>
+          <span class="wrong-num2">Can't be blank</span>
+          <span class="wrong-num3">Should be of 16 numbers</span>
+        </div>
+      </div>
+
+      <div id="date-cvc">
+        <div>
+          <div id="date">
+            <label>Exp. Date (MM/YY)</label>
+            <div id="input">
+              <input type="number" max="12" min="1" placeholder="MM" id="month-input">
+              <input type="number" max="2022" min="1910" placeholder="YY" id="year-input">
+            </div>
+          </div>
+
+          <div id="cvc">
+            <label>CVC</label>
+            <input type="text" placeholder="e.g. 123" id="cvc-input">
+          </div>
+        </div>
+
+        <div class="wrong-date-cvc">
+          <span class="empty-date">Can't be blank</span>
+          <span class="empty-cvc">Can't be blank</span>
+        </div>
+      </div>
+
+      <div id="submit">
+        <button class="submit-btn" onclick="submit()">Confirm</button>
+      </div>
+
+    </div>
+
+    <!----------------------------------- Thank You card ------------------------------------->
+
+    <div id="thank">
+      <img src="images/icon-complete.svg" alt="">
+      <h2>Thank you!</h2>
+      <p>We've added your card details</p>
+      <button><a href="index.html">Continue</a></button>
+    </div>
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
+      Mentor</a>.
+    Coded by <a href="#">Aneesh Sharma</a>.
+  </div> -->
+  </div>
+  <script src="index.js"></script>
+
+</body>
+
+</html>
